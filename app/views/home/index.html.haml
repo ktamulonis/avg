@@ -1,0 +1,34 @@
+%section.lightimage
+  .container
+    .row
+      .inner-column
+        %h1 Alumni Ventures Group
+
+        %p.info Alums Investing Together
+
+        = link_to "get involved", root_url, class: "btn btn-primary btn-lg"
+
+%section.colored.primary#about
+  =render "about"
+
+%section.funds#funds
+  = render "funds"
+%section.faqs#faqs
+  %h1.title FREQUENTLY ASKED QUESTIONS
+  .container
+    .half-block.faqs-left
+      = render "faqs-left"
+    .half-block.faqs-right
+      = render "faqs-right"
+%section.newsletters#newsletters
+  .container
+    .row
+%section.board#board
+  .container
+    .row
+%section.contact#contact
+  .container
+    .row
+%section.careers#careers
+  .container
+    .row
