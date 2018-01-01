@@ -185,7 +185,10 @@ footer p {
   display: flex;
   justify-content: center;
 }
-
+.news-image {
+  display: flex;
+  justify-content: center;
+}
 .f-bg-box {
     position: relative;
     width: 100%;
@@ -232,4 +235,19 @@ footer p {
     margin: 0px;
 }
 
-
+.board-pic {
+  height: 10em;
+  width:10em;
+  border-radius:50%;
+  overflow:hidden;
+}
+.board-member {
+  border-bottom: 1px solid grey;
+  margin-bottom: 1em;
+}
+.board-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
