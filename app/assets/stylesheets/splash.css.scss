@@ -294,4 +294,18 @@ footer p {
 .contact-button p {
   font-size: .5em;
 }
-
+.logo-box {
+  display: flex;
+  margin-bottom: 1em;
+  text-align: left;
+}
+.co-name {
+  border-left: 1px solid white;
+}
+.co-name h6 {
+  margin: .1em;
+  padding-left:.2em;
+}
+.co-logo {
+  padding-right:.2em;
+}
