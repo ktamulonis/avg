@@ -22,6 +22,9 @@ header.slideup {
     li > a {
       transition: all .2s;
       transition-timing-function: ease-out;
+      @media (max-width: $screen-xs-max) {
+        background-color: white;
+      }
 
       font-size: 10px;
       text-transform: uppercase;
