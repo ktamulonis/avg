@@ -21,28 +21,3 @@
   = render 'chromeframe'
   = render 'flashes'  
   = yield
-
-  -# Javascript at the bottom for fast page loading
-  = render 'javascripts'
-  = javascript_include_tag 'scrollReveal.js'
-  :javascript
-      $(function() { 
-        window.scrollReveal = new scrollReveal();
-        $("#top a[href^='#']").on('click', function(e) {
-          e.preventDefault();
-
-          // store hash
-          var hash = this.hash;
-
-          var nav_height = $("nav").height();
-
-          // animate
-          $('html, body').animate({
-            scrollTop: $(this.hash).offset().top - nav_height
-          }, 500, function(){
-            // when done, add hash to url
-            // (default click behaviour)
-            window.location.hash = hash;
-          });
-        });
-      });
