@@ -13,3 +13,17 @@
 
     ga('create', '#{ ENV['GOOGLE_ANALYTICS_SITE_ID'] }', 'auto');
     ga('send', 'pageview');
+:javascript
+  function initMap() {
+    var uluru = {lat: 42.989533, lng: -71.463303};
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 7,
+      center: uluru
+    });
+    var marker = new google.maps.Marker({
+      position: uluru,
+      map: map
+    });
+  }
+%script{:async => "", :defer => "defer", :src => "https://maps.googleapis.com/maps/api/js?key=#{ENV['GOOGLE_MAPS_API_KEY']}&callback=initMap"}
+  :cdata
