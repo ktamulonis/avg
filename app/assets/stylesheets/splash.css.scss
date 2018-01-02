@@ -45,6 +45,7 @@ body.splash {
     padding-top: $splash-section-padding;
     padding-bottom: $splash-section-padding;
     @extend .clearfix;
+    min-height: 100vh;
   }
 
   header {
@@ -267,3 +268,6 @@ footer p {
   text-align: left;
 }
 
+.jobs {
+  text-align: left;
+}
