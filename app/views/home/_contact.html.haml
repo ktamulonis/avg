@@ -3,17 +3,19 @@
   .col-sm-8.col-md-8
     #map.col-sm-8.col-md-8
   #contact-info.col-sm-4.col-md-4
-    %h2
+    %a.contact-button.btn.btn-primary{:href => "tel:1-603-518-8112"}
       %i.glyphicon.glyphicon-phone-alt
-      %span 603-518-8112
-    %h2
-      .glyphicon.glyphicon-road
-      %span 788 Elm Street
-      %p Manchester, NH 03101
-    %h2
+      %p 603-518-8112
+    %a.contact-button.btn.btn-primary{:href => "mailto:info@launch-angels.com?Subject=Website%20Message", :target => "_top"}
       .glyphicon.glyphicon-send
-      %span info@launch-angels.com
-    %h2
-      .glyphicon.glyphicon-map-marker
-      %span.h4 We are located on the corner of Elm and West Merrimack Streets in downtown Manchester, NH. Metered parking is available on the street.
+      %p info@launch-angels.com
+    %a.contact-button.btn.btn-primary{:href => "https://maps.google.com?saddr=Current+Location&daddr=788+Elm+Street+Manchester+NH+03101", :target => "_blank"}
+      .glyphicon.glyphicon-road
+      %p 788 Elm Street
+      %p Manchester, NH 03101
+.row.container
+  %h2
+    .glyphicon.glyphicon-map-marker
+    %span.h4 We are located on the corner of Elm and West Merrimack Streets in downtown Manchester, NH. Metered parking is available on the street.
+
 
