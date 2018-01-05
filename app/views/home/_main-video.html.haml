@@ -1,0 +1,109 @@
+
+#carousel.carousel.slide.carousel-fade{"data-interval" => "false", "data-ride" => "carousel"}
+  %ol.carousel-indicators
+    %li.active{"data-slide-to" => "0", "data-target" => "#carousel"}
+    %li{"data-slide-to" => "1", "data-target" => "#carousel"}
+    %li{"data-slide-to" => "2", "data-target" => "#carousel"}
+    %li{"data-slide-to" => "3", "data-target" => "#carousel"}
+    %li{"data-slide-to" => "4", "data-target" => "#carousel"}
+    %li{"data-slide-to" => "5", "data-target" => "#carousel"}
+    %li{"data-slide-to" => "6", "data-target" => "#carousel"}
+    %li{"data-slide-to" => "7", "data-target" => "#carousel"}
+    %li{"data-slide-to" => "8", "data-target" => "#carousel"}
+  / Carousel items
+  .carousel-inner
+    .item.active
+      .slide-content
+        %video{:autoplay => "", :loop => "", :muted => "", :playsinline => "", :src => "https://s3.amazonaws.com/alvg/dartmouth.mp4"}
+        .slide-overlay.door
+          =link_to "http://www.greendventures.com/", :target => "_blank" do 
+            .video-title.upcase Green D Ventures
+            .center-page
+              .center-logo
+                =image_tag 'https://s3.amazonaws.com/alvg/avg-logo.png', class: "img-responsive"
+            .video-description Dartmouth Alums Investing Together
+    .item
+      .slide-content
+        %video{:autoplay => "", :loop => "", :muted => "", :playsinline => "", :src => "https://s3.amazonaws.com/alvg/yale.mp4"}
+        .slide-overlay.door
+          =link_to "http://www.blueivyventures.com/", :target => "_blank" do
+            .video-title.upcase Blue Ivy Ventures
+            .center-page
+              .center-logo
+                =image_tag 'https://s3.amazonaws.com/alvg/avg-logo.png', class: "img-responsive"
+            .video-description.upcase Yale Alums Investing Together
+    .item
+      .slide-content
+        %video{:autoplay => "", :loop => "", :muted => "", :playsinline => "", :src => "https://s3.amazonaws.com/alvg/northwestern.mp4"}
+        .slide-overlay.door
+          =link_to "http://purplearchventures.com/", :target => "_blank" do
+            .video-title.title.upcase Purple Arch Ventures
+            .center-page
+              .center-logo
+                =image_tag 'https://s3.amazonaws.com/alvg/avg-logo.png', class: "img-responsive"
+            .video-description.upcase Northwestern Alums Investing Together
+    .item
+      .slide-content
+        %video{:autoplay => "", :loop => "", :muted => "", :playsinline => "", :src => "https://s3.amazonaws.com/alvg/harvard.mp4"}
+        .slide-overlay.door
+          =link_to "http://www.theyardventures.com/", :target => "_blank" do
+            .video-title.upcase The Yard Ventures
+            .center-page
+              .center-logo
+                =image_tag 'https://s3.amazonaws.com/alvg/avg-logo.png', class: "img-responsive"
+            .video-description Harvard Alums Investing Together
+    .item
+      .slide-content
+        %video{:autoplay => "", :loop => "", :muted => "", :playsinline => "", :src => "https://s3.amazonaws.com/alvg/penn.mp4"}
+        .slide-overlay.door
+          =link_to "http://www.chestnutstreetventures.com/", :target => "_blank"  do
+            .video-title.upcase Chestnut Street Ventures
+            .center-page
+              .center-logo
+                =image_tag 'https://s3.amazonaws.com/alvg/avg-logo.png', class: "img-responsive"
+            .video-description Penn Alums Investing Together
+    .item
+      .slide-content
+        %video{:autoplay => "", :loop => "", :muted => "", :playsinline => "", :src => "https://s3.amazonaws.com/alvg/wisconsin.mp4"}
+        .slide-overlay.door
+          =link_to "http://www.bascomventures.com/", :target => "_blank"  do
+            .video-title.upcase Bascom Ventures
+            .center-page
+              .center-logo
+                =image_tag 'https://s3.amazonaws.com/alvg/avg-logo.png', class: "img-responsive"
+            .video-description University of Wisconsin Alums Investing Together
+    .item
+      .slide-content
+        %video{:autoplay => "", :loop => "", :muted => "", :playsinline => "", :src => "https://s3.amazonaws.com/alvg/mit.mp4"}
+        .slide-overlay.door
+          =link_to "http://www.castorventures.com/", :target => "_blank"  do
+            .video-title.upcase Castor Ventures
+            .center-page
+              .center-logo
+                =image_tag 'https://s3.amazonaws.com/alvg/avg-logo.png', class: "img-responsive"
+            .video-description MIT Alums Investing Together
+    .item
+      .slide-content
+        %video{:autoplay => "", :loop => "", :muted => "", :playsinline => "", :src => "https://s3.amazonaws.com/alvg/ucberkeley.mp4"}
+        .slide-overlay.door
+          =link_to "http://www.strawberrycreekventures.com/", :target => "_blank"  do
+            .video-title.upcase Strawberry Creek Ventures
+            .center-page
+              .center-logo
+                =image_tag 'https://s3.amazonaws.com/alvg/avg-logo.png', class: "img-responsive"
+            .video-description UC Berkeley Alums Investing Together
+    .item
+      .slide-content
+        %video{:autoplay => "", :loop => "", :muted => "", :playsinline => "", :src => "https://s3.amazonaws.com/alvg/standford.mp4"}
+        .slide-overlay.door
+          =link_to "http://www.thefarm-ventures.com/", :target => "_blank"  do
+            .video-title.upcase The Farm Ventures
+            .center-page
+              .center-logo
+                =image_tag 'https://s3.amazonaws.com/alvg/avg-logo.png', class: "img-responsive"
+            .video-description Stanford Alums Investing Together
+
+  %a.carousel-control.left{"data-slide" => "prev", :href => "#carousel"}
+    %span.glyphicon.glyphicon-chevron-left
+  %a.carousel-control.right{"data-slide" => "next", :href => "#carousel"}
+    %span.glyphicon.glyphicon-chevron-right

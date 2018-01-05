@@ -31,7 +31,9 @@ $border-radius-large: 2px;
   letter-spacing: 1px;
   font-size: 12px;
 }
-
+.upcase {
+  text-transform: uppercase;
+}
 $splash-section-padding: 4em;
 
 body.splash {
@@ -309,3 +311,140 @@ footer p {
 .co-logo {
   padding-right:.2em;
 }
+
+//------------carousel--------
+html,
+body {
+  height: 100%;
+}
+
+.carousel {
+  width: 100%;
+  background-color: #000;
+  height: 100%;
+}
+.carousel-fade .carousel-inner .item {
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  opacity: 0;
+}
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel-fade .carousel-control .glyphicon {
+  font-size: 6rem;
+}
+.carousel,
+.carousel-inner,
+.carousel-inner .item {
+  height: 100%;
+}
+.stopfade {
+  opacity: 0.5;
+}
+.slide-content {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+}
+.slide-content video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  -webkit-transition: 1s opacity;
+  transition: 1s opacity;
+}
+.slide-content video::-webkit-media-controls-start-playback-button {
+  display: none !important;
+  -webkit-appearance: none;
+}
+.door {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+
+}
+.door a {
+  text-decoration: none;
+}
+.video-title {
+  font-size: 5em;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  margin: .5em;
+  @media (max-width: $screen-xs-max) {
+  font-size: 3em;
+  }
+}
+
+.video-description {
+  border-top: 1px solid #fff;
+  margin-top: 15px;
+  font-size: 4rem;
+  margin: .5em;
+}
+
+.center-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-logo {
+  @media (max-width: $screen-xs-max) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:5em;
+    width:5em;
+  }
+}
+
+
+.fund-logo {
+    position: relative;
+    width: 25em;
+    height: 10em;
+    display: block;  
+
+}
+
+.fund-button :hover {
+  background-color: white;
+}
+
+
